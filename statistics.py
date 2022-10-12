@@ -1,5 +1,4 @@
 """Module containing functions for calculating some statistics."""
-from math import sqrt
 
 
 def average(data):
@@ -43,6 +42,6 @@ def variance(data):
     return sum([(x-avg)**2 for x in data])/n
 
 
-def standard_dev(data):
+def stdev(data):
     """Return the population standard deviation of a list of data values."""
     return sqrt(variance(data))
